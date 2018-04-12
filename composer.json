@@ -1,0 +1,18 @@
+{
+  "name": "stratadox/sorting-contracts",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Stratadox",
+      "homepage": "http://www.stratadox.com/"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Stratadox\\Sorting\\Contracts\\": "src"
+    }
+  },
+  "require": {
+    "php": ">=7"
+  }
+}
