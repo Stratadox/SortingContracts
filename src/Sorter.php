@@ -8,14 +8,14 @@ namespace Stratadox\Sorting\Contracts;
  * @author  Stratadox
  * @package Stratadox\Sorting
  */
-interface SortsTheElements
+interface Sorter
 {
     /**
      * Sorts the elements according to a sorting definition.
      *
-     * @param mixed|array      $elements            The collection of items to sort.
-     * @param DefinesHowToSort $usingThisDefinition The definition of how to sort.
+     * @param mixed|array $elements            The collection of items to sort.
+     * @param Sorting     $usingThisDefinition The definition of how to sort.
      * @return mixed|array                          A sorted copy of the input collection.
      */
-    public function sortThe($elements, DefinesHowToSort $usingThisDefinition);
+    public function sortThe($elements, Sorting $usingThisDefinition);
 }

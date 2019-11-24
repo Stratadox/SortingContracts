@@ -8,7 +8,7 @@ namespace Stratadox\Sorting\Contracts;
  * @author  Stratadox
  * @package Stratadox\Sorting
  */
-interface DefinesHowToSort
+interface Sorting
 {
     /**
      * Defines the field to sort by.
@@ -34,7 +34,7 @@ interface DefinesHowToSort
     /**
      * Defines how to sort unresolved candidates.
      *
-     * @return DefinesHowToSort The next candidates' ordering.
+     * @return Sorting The next candidates' ordering.
      */
-    public function next(): DefinesHowToSort;
+    public function next(): Sorting;
 }
