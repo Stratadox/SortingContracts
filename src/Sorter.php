@@ -13,9 +13,9 @@ interface Sorter
     /**
      * Sorts the elements according to a sorting definition.
      *
-     * @param mixed|array $elements            The collection of items to sort.
-     * @param Sorting     $usingThisDefinition The definition of how to sort.
-     * @return mixed|array                          A sorted copy of the input collection.
+     * @param array   $elements            The collection of items to sort.
+     * @param Sorting $usingThisDefinition The definition of how to sort.
+     * @return array                       A sorted copy of the input array.
      */
-    public function sortThe($elements, Sorting $usingThisDefinition);
+    public function sort(array $elements, Sorting $usingThisDefinition): array;
 }
